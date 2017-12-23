@@ -1,23 +1,25 @@
+//var resposta = confirm("Deseja excluir?");
+
 /*
-alert("Olá HCODE!");
-const resposta = confirm("Deseja excluir?");
 console.log(resposta);
 */
 
-const a = 10;
-const b = 33;
+var a = 10;
+var b = 33;
 
 function somar(a, b){
-	return parseInt(a) + parseInt(b);
+
+	return a + b;
+
 }
 
-document.querySelector("#calcular").addEventListener("click", function(){
-	var valorA = document.querySelector("#valorA").value;
-	var valorB = document.querySelector("#valorB").value;
-	if(valorA.length > 0 && valorB.length > 0 ) {
-		//alert(parseInt(valorA) + parseInt(valorB));
-		somar(valorA, valorB);
-	} else {
-		alert("Digite os valores para o cálculo");
-	}
-});
+console.log(somar(2, 5));
+
+document.getElementById("btn-calcular").onclick = function(){
+
+	var valorA = document.getElementById("valor-a").value;
+	var valorB = document.getElementById("valor-b").value;
+
+	alert(parseInt(valorA) + parseInt(valorB));
+
+}
